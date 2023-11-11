@@ -1,0 +1,194 @@
+body{
+    /*margen del elemento*/
+    margin: 0;
+    /*margen hacia dentro*/
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+/*Esto es la navegación */
+header {
+    /*widt : ancho // heigth : alto */
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    /* Justificamos a la derecha */
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /* Con esto eliminamos los puntos de la lista */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /*Con esto centramos verticalmente */
+    align-items: center;
+}
+a {
+    /* Eliminamos las lineas debajo de las letras */
+    text-decoration: none;
+}
+
+nav .nav-right-section a {
+    /* color de las anclas*/
+    color: black;
+/* Espacio entre anclas */
+    margin-right: 20px;
+
+}
+/*icono del menu*/
+nav .nav-right-section .Menu{
+    /* Agregamos la imagen desde css*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /*Que la imagen se vea mas grande*/
+    background-size:contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+/* Respecto a la imagen del usuarix */
+nav .nav-right-section img{
+    /* Para hacer redondo el borde */
+    border-radius: 100px;
+    /* Esto es para el tamaño de la imagen */
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+/* Esta parte es del main: */
+main{
+    /* Agregamos un espacio entre header y main  */
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /*Con esto podemos centrar gracias a los margenes automaticos*/
+    margin: 0 auto;
+}
+
+main .main-logo img {
+    height: 100px;
+}
+
+main .main-input{
+    width: 530px;
+    /*Con esto podemos centrar gracias a los margenes automaticos*/
+    margin: 0 auto;
+}
+
+main .main-input-contanier {
+    /* esto es para el ancho del borde, borde-estilo y el borde del color */
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    width: 550px;
+}
+
+main .main-input input{
+    height: 35px;
+    /* Esto es para quitar el borde de la cajita de texto y cuando esta el cursor cerca de la cajita de texto*/
+    border: none;
+    outline: none;
+    width: 440px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    /* margin-right: 50px; */
+
+}
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 30px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    margin-left: 3px;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 30px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+}
+/* Esta parte es sobre los botones: */
+main .botones {
+    padding-top: 2px;
+    align-items: center;
+    margin: 11px 4px;
+
+}
+main .botones div{
+    display: inline-block;
+}
+main .busca{
+    border-color: transparent; 
+    margin-right:30px;
+    padding: 10px;
+    border-radius: 5px;
+} 
+
+main .separacion{
+    border-color: transparent;
+    background-color: transparent;
+    
+}
+main .suerte{
+    border-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(233, 233, 229);
+    color: rgb(88, 88, 88);
+    margin-top: 100%;
+}
+
+footer .sec-mex {
+padding: auto;
+border-bottom: 2px solid #f0f0ed;   
+}
+
+footer .Informacion{
+    padding-left: 25;
+    padding-bottom: 10px;
+}
+
+footer .nav-right-section{
+    list-style: none;
+    float: right;
+    padding-left: 35px;
+    padding-right: 14px;
+}
+
+footer .nav-left-section{
+    list-style: none;
+    float: left;
+    padding-right: 30px;
+    padding-left: 13px;
+}
